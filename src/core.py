@@ -295,7 +295,7 @@ def print_result(result: AnalysisResult):
             print(f"  {color}[{finding.severity.upper()}]{Colors.RESET} {finding.title}")
             print(f"    {Colors.DIM}{finding.description}{Colors.RESET}")
     else:
-        print(f"\n{Colors.GREEN}✓ No suspicious content detected{Colors.RESET}")
+        print(f"\n{Colors.GREEN}[OK] No suspicious content detected{Colors.RESET}")
     
     # Extracted data
     if result.extracted_js:
